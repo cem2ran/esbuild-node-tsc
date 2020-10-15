@@ -65,7 +65,7 @@ function getBuildMetadata(userConfig: Config) {
   const assetsOptions = {
     baseDir: userConfig.assets?.baseDir || "src",
     outDir: outDir,
-    patterns: [...assetPatterns, `!**/*.{ts,js,tsx,jsx}`],
+    patterns: [...assetPatterns, `!**/*.{ts,tsx,jsx}`],
   };
 
   return { outDir, esbuildOptions, assetsOptions };
